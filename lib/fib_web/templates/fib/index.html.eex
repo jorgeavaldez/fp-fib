@@ -1,0 +1,10 @@
+<h1>fib(<%= @n %>) = <%= @result %></h1>
+
+<%= form_for @conn, fib_path(@conn, :update), [ as: :fib ], fn f -> %>
+    <fieldset>
+      <legend>Try another</legend>
+
+      <%= number_input f, :n %>
+      <%= submit "Calculate" %>
+    </fieldset>
+<% end %>

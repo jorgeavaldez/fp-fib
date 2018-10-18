@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h2>here's some regular text <%= @name %></h2>
+  <h2>num visits <%= @visits %></h2>
+  <p class="lead">does the bepis</p>
+
+  <% "Here's some elixir code coming through" %>
+  <%= DateTime.utc_now %>
+</div>
